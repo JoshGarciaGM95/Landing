@@ -1,3 +1,61 @@
+/* Iconos para elementos del portafolio */
+.portfolio-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    opacity: 0.7;
+    text-align: left;
+}
+/* FAQ Cards Modernas */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+.faq-card {
+    background: #f5f7fa;
+    border: 1px solid #e3eaf2;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #bde0fe;
+    padding: 0.7rem 1.2rem;
+    transition: box-shadow 0.2s, transform 0.2s;
+    font-size: 1.08rem;
+    color: #222;
+}
+.faq-card[open] {
+    box-shadow: 0 6px 24px #00b4d8aa;
+    transform: translateY(-2px) scale(1.02);
+}
+.faq-card summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #0078d7;
+    font-size: 1.08rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    outline: none;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+.faq-card summary:hover {
+    background: #e3eaf2;
+}
+.faq-icon {
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+.faq-answer {
+    margin-top: 0.7rem;
+    color: #222;
+    background: #f8fafd;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    box-shadow: 0 1px 6px #bde0fe44;
+    font-size: 1rem;
+}
 /* Portafolio visual */
 .portfolio-list {
     display: flex;
