@@ -136,6 +136,8 @@
                     <form id="contactForm">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="number" id="telefono" name="telefono" required>
                         <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" required>
                         <label for="mensaje">Mensaje:</label>
@@ -143,6 +145,19 @@
                         <button type="submit">Enviar</button>
                     </form>
                     <div id="formMsg"></div>
+                    <script>
+                    document.getElementById('contactForm').addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        var nombre = document.getElementById('nombre').value;
+                        var telefono = document.getElementById('telefono').value;
+                        var email = document.getElementById('email').value;
+                        var mensaje = document.getElementById('mensaje').value;
+                        var numeroWhatsApp = '50255844677';
+                        var texto = `Hola Josue!%0A*Nombre:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Correo:* ${email}%0A*Mensaje:* ${mensaje}`;
+                        var url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
+                        window.open(url, '_blank');
+                    });
+                    </script>
                 </section>
                 <section id="faq">
                     <h2>Preguntas Frecuentes</h2>
