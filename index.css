@@ -1,3 +1,25 @@
+/* Imagen decorativa chibi_dude en FAQ flotando a la derecha */
+.faq-chibi-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+}
+.faq-chibi-right img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+    opacity: 0.85;
+    object-fit: cover;
+    background: #fff;
+}
+@media (max-width: 600px) {
+    .faq-chibi-right img {
+        width: 54px;
+        height: 54px;
+    }
+}
 @media (max-width: 400px) {
     body, main, section {
         padding: 0 !important;
